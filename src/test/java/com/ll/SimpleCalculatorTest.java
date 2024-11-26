@@ -43,4 +43,13 @@ public class SimpleCalculatorTest {
         assertThat(rs).isEqualTo(5);
     }
 
+    @Test
+    @DisplayName("5 * 7 = 35")
+    public void t5() {
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.multiplication(2, 10);
+
+        assertThat(rs).isEqualTo(35);
+    }
+
 }
